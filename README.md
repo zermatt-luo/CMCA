@@ -2,7 +2,7 @@
 
 This repository is our implementation of Cross-Domain Matrix Compression Adaptation (CMCA) for Zero-Shot Sketch-Based Image Retrieval.
 
-<img src="./static/Framework.svg" alt="Framework"  />
+<img src="./static/Framework.png" alt="Framework"  />
 
 > Abstract: This paper explores an efficient parameter fine-tuning strategy for zero-shot sketch-based image retrieval (ZS-SBIR). We highlight a key finding: through efficient parameter fine-tuning, excellent retrieval accuracy can be achieved using only 12% of the full parameters. This superior performance is attributed to low-rank matrix compression in the redundant parameter space, which extracts more discriminative effective feature dimensions. Specifically, to fully leverage the potential of pretrained models, we propose a cross-domain matrix compression adaptation method. For lower-level features, we apply a general low-rank decomposition to extract shared basic shapes or contours information across modalities. To mitigate overfitting to local similarities, we propose a domain-specific matrix compression module that guides the model in learning high-level abstractions essential for sketch retrieval. Our method is simple and effective, balancing both general semantic information and feature variations across domains within the same category. Experimental results on the ZS-SBIR benchmark dataset show that our method not only outperforms existing state-of-the-art methods, but also requires significantly fewer training parameters.
 
