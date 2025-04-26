@@ -1,6 +1,6 @@
 # Cross-Domain Matrix Compression Adaptation for Zero-Shot Sketch-Based Image Retrieval
 
-This repository is our implementation of Cross-Domain Matrix Compression Adaptation (CMCA) for Zero-Shot Sketch-Based Image Retrieval.
+This repository is our implementation of Cross-Domain Matrix Compression Adaptation for Zero-Shot Sketch-Based Image Retrieval, IJCNN2025.
 
 <img src="./static/Framework.png" alt="Framework"  />
 
@@ -8,7 +8,25 @@ This repository is our implementation of Cross-Domain Matrix Compression Adaptat
 
 ## Datasets
 
-Download the datasets Sketchy, TU-Berlin, and Quick, Draw! for ZS-SBIR from [Google Drive](https://drive.google.com/file/d/1-ewan-RXbnLbW0en5r6pw2AITG3mT7i8/view?usp=sharing), and put these three in  `./datasets`.
+- For Sketchy, you can go to the [Sketchy official website](https://sketchy.eye.gatech.edu/)  to download the dataset.
+
+- For TU-Berlin, you can go to the [TU-Berlin official website](https://cybertron.cg.tu-berlin.de/eitz/projects/classifysketch/) to download the dataset.
+
+- For Quick, Draw!, you can go to the [Quick, Draw! official website](https://github.com/googlecreativelab/quickdraw-dataset)  to download the dataset.
+
+  > datasets
+  > ├── Sketchy
+  > │   └── photo ..
+  > │   └── sketch ..
+  > │   └── zeroshot2 ..
+  > ├── TUBerlin
+  > │   └── ImageResized_ready ..
+  > │   └── png_ready ..
+  > │   └── zeroshot ..
+  > ├── QuickDraw
+  > │   └── images ..
+  > │   └── sketches ..
+  > │   └── zeroshot ..
 
 ## Environment
 
@@ -24,7 +42,7 @@ conda activate CMCA
 
 ### Pretrained DINOV2 backbone
 
-We use ViT-B/14 from DINOv2 as the backbone. Please download the pretrained model from [Google Drive](https://drive.google.com/file/d/1TbmUiNKnhjDbYaJGcx2azP8Og_CmGwP5/view?usp=sharing) or the [official DINOv2 GitHub repository](https://github.com/facebookresearch/dinov2). Then, place the file `dinov2_vitb14_pretrain.pth` into the `./utils` folder and modify line 22 in `./utils/model_dinov2.py` to absolute path if necessary.
+We use ViT-B/14 from DINOv2 as the backbone. Please download the pretrained model from the [official DINOv2 GitHub repository](https://github.com/facebookresearch/dinov2). Then, place the file `dinov2_vitb14_pretrain.pth` into the `./utils` folder and modify line 22 in `./utils/model_dinov2.py` to absolute path if necessary.
 
 ### Train CMCA
 
@@ -72,3 +90,24 @@ Evaluate model on Quick, Draw! dataset:
 python -m src.test_quickdraw
 ```
 
+## Acknowledgments
+
+Our code is partially adapted from the following repositories:
+- [ZSE-SBIR](https://github.com/buptLinfy/ZSE-SBIR)
+- [Sketch_LVM](https://github.com/aneeshan95/Sketch_LVM)
+
+We sincerely thank the original authors for their excellent contributions.
+
+## Citation
+
+If you find this repository useful, please cite our paper:
+
+```
+@inproceedings{liu2025cmca,
+    title={Cross-Domain Matrix Compression Adaptation for Zero-Shot Sketch-Based Image Retrieval},
+    author={Decheng Liu, Xu Luo, Yu Zheng, Chunlei Peng},
+    booktitle={Proceedings of the International Joint Conference on Neural Networks (IJCNN)},
+    year={2025}，
+    organization={IEEE}
+}
+```
