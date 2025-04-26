@@ -78,19 +78,19 @@ The trained model on Sketchy , TU-Berlin and Quick, Draw! is provided on [Google
 
 Evaluate model on Sketchy dataset:
 
-```python
+```
 python -m src.test_sketchy
 ```
 
 Evaluate model on TU-Berlin dataset:
 
-```python
+```
 python -m src.test_tuberlin
 ```
 
 Evaluate model on Quick, Draw! dataset:
 
-```python
+```
 python -m src.test_quickdraw
 ```
 
