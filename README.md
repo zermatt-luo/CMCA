@@ -50,7 +50,7 @@ We use ViT-B/14 from DINOv2 as the backbone. Please download the pretrained mode
 
 Train model on Sketchy dataset:
 
-```python
+```
 python -m src.train_sketchy
 ```
 
