@@ -44,7 +44,7 @@ conda activate CMCA
 
 ## Train
 
-### Pretrained DINOV2 backbone
+### Pretrained DINOv2 backbone
 
 We use ViT-B/14 from DINOv2 as the backbone. Please download the pretrained model from the [official DINOv2 GitHub repository](https://github.com/facebookresearch/dinov2). Then, place the file `dinov2_vitb14_pretrain.pth` into the `./utils` folder and modify line 22 in `./utils/model_dinov2.py` to absolute path if necessary.
 
