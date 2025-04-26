@@ -14,19 +14,21 @@ This repository is our implementation of Cross-Domain Matrix Compression Adaptat
 
 - For Quick, Draw!, you can go to the [Quick, Draw! official website](https://github.com/googlecreativelab/quickdraw-dataset)  to download the dataset.
 
-  > datasets
-  > ├── Sketchy
-  > │   └── photo ..
-  > │   └── sketch ..
-  > │   └── zeroshot2 ..
-  > ├── TUBerlin
-  > │   └── ImageResized_ready ..
-  > │   └── png_ready ..
-  > │   └── zeroshot ..
-  > ├── QuickDraw
-  > │   └── images ..
-  > │   └── sketches ..
-  > │   └── zeroshot ..
+  ```
+  datasets
+  ├── Sketchy
+  │   └── photo ..
+  │   └── sketch ..
+  │   └── zeroshot2 ..
+  ├── TUBerlin
+  │   └── ImageResized_ready ..
+  │   └── png_ready ..
+  │   └── zeroshot ..
+  ├── QuickDraw
+  │   └── images ..
+  │   └── sketches ..
+  │   └── zeroshot ..
+  ```
 
 ## Environment
 
